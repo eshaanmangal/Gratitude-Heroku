@@ -1,0 +1,30 @@
+#Spring DATASOURCE (DataSourceAutoConfiguration & DataSourceProperties)
+spring:
+  datasource:
+    url: "jdbc:postgresql://localhost:5432/TreeWala"
+    username: eshaanmangal
+    password:
+  mail:
+    default-encoding: UTF-8
+    host: smtp.gmail.com
+    port:  587
+    protocol: smtp
+    username: testxebianew@gmail.com
+    password: qwerty12@
+
+#The SQL dialect makes Hibernate generate better SQL for the chosen database
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+#Hibernate ddl auto (create, create-drop, validate, update)
+    hibernate:
+      ddl-auto: update
+
+#Zoho url
+zoho:
+  url: "https://people.zoho.com/people/api/forms"
+  token: f85d7b9916365d6cbd723b2fd8b6ba74
+
+
+
